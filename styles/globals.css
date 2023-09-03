@@ -1,0 +1,355 @@
+body {
+  background-color: #141526;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+.heading {
+  color: #e8e8e8;
+  font-size: 30px;
+  text-align: center;
+}
+.change:after {
+  content: "";
+  animation-delay: 3s;
+  animation: changeText 4s infinite linear;
+}
+@keyframes changeText {
+  6% {
+    content: "R";
+  }
+  12% {
+    content: "Ra";
+  }
+  18% {
+    content: "Ran";
+  }
+  24% {
+    content: "Rand";
+  }
+  30% {
+    content: "Rando";
+  }
+  36% {
+    content: "Random";
+  }
+  42% {
+    content: "Random ";
+  }
+  48% {
+    content: "Random M";
+  }
+  54% {
+    content: "Random Mo";
+  }
+  60% {
+    content: "Random Mov";
+  }
+  66% {
+    content: "Random Movi";
+  }
+  72% {
+    content: "Random Movie";
+  }
+  78% {
+    content: "Random Mov";
+  }
+  84% {
+    content: "Random";
+  }
+  90% {
+    content: "Ran";
+  }
+  100% {
+    content: "";
+  }
+}
+.line1 {
+  background-color: #e8e8e8;
+  height: 35px;
+  width: 3px;
+  display: inline-block;
+}
+.burger {
+  background-image: url("/nav-menu-icon.svg");
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.filter {
+  width: calc(100% - 20px);
+  padding: 22.4px 0px 20px 20px;
+  border-radius: 0;
+  font-size: 30px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+  color: #e8e8e8;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.Namee{
+  color: #141526;
+}
+.mobile-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 99999999;
+  width: 100%;
+  background-color: #141526;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.mobile-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+}
+.cross-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cross {
+  width: 154px;
+  height: 154px;
+  position: relative;
+  border-bottom: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+.line-1,
+.line-2 {
+  width: 1px;
+  height: 120px;
+  border-left: 1px solid #e8e8e8;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  left: 50%;
+}
+.line-2 {
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.filter-movie {
+  color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  border-radius: 100px;
+  width: fit-content;
+  padding: 10px 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.shuffle {
+  color: #e8e8e8;
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px solid #e8e8e8;
+  border-radius: 100px;
+  width: fit-content;
+  padding: 10px 16px;
+  transition: 1s;
+  margin-top: 20px;
+}
+.check {
+  background-color: #e8e8e8;
+  color: black;
+}
+.shuffle:hover {
+  scale: 1.05;
+}
+.movie-wrapper {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #26273b;
+  padding: 20px 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.para {
+  font-size: 18px;
+  color: #bdc1c6;
+}
+.routes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.routes div {
+  background-color: #2a4165;
+  color: #e8eaed;
+  padding: 10px 16px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+}
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.poster-header {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.title {
+  font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  color: #e8eaed;
+}
+.info-wrapper {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.year,
+.runtime {
+  font-size: 14px;
+  line-height: 22px;
+  color: #bdc1c6;
+  line-height: 22px;
+}
+.rating-wrapper {
+  display: flex;
+  gap: 30px;
+  height: 60px;
+  align-items: center;
+  padding: 15px 0;
+}
+.rating {
+  color: #bdc1c6;
+  font-size: 14px;
+  line-height: 1.58;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rating div {
+  color: #8ab6f8;
+}
+.line {
+  height: 50px;
+  border-left: 1px solid #3c4043;
+}
+.overview,
+.tagline {
+  font-size: 14px;
+  color: #bdc1c6;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 350px;
+}
+.overview {
+  padding: 20px 0 0 0;
+}
+.image {
+  width: 200px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.poster-wrapper {
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.trailer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+.trailer-image {
+  width: 150px;
+  height: 86px;
+  border-radius: 15px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+.link-wrapper {
+  text-decoration: none;
+  text-decoration-skip: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  color: #1cbfff;
+  font-size: 22px;
+  text-decoration: none !important;
+  text-decoration-line: none;
+  text-decoration-skip: unset;
+  text-underline-offset: unset;
+}
+.filter:before {
+  opacity: 1;
+  color: #e8e8e8;
+  transform: translateY(0) rotateX(0deg);
+  transition: 0.5s;
+}
+.filter:after {
+  opacity: 0;
+  color: black;
+  transition: 0.5s;
+  transform: translateY(-50%) rotateX(90deg);
+}
+.filter:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.filter:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+}
+@media (max-width: 450px) {
+  body {
+    padding: 20px;
+  }
+  .navbar {
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+
+  .cross {
+    width: 60px;
+    height: 60px;
+  }
+  .line-1,
+  .line-2 {
+    height: 60px;
+  }
+  .filter {
+    font-size: 16px;
+  }
+  .heading{
+    font-size: 24px;
+  }
+}
